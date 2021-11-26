@@ -1,0 +1,16 @@
+venv/
+temp/
+.idea/
+builds
+# Lambda
+*.zip
+
+#  Local .terraform directories
+.terraform
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+*.tfvars
