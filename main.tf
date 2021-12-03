@@ -66,7 +66,7 @@ resource "aws_wafv2_ip_set" "rate_limit_blacklist" {
 # Lambda
 ####################################
 module "lambda" {
-  source = "git::https://alm-github.systems.uk.hsbc/PEAK/terraform-aws-lambda?ref=master"
+  source = "terraform-aws-modules/lambda/aws"
 
   function_name      = "${var.name}-lambda"
   description        = "Cloudfront Rate Limiting Lambda"
