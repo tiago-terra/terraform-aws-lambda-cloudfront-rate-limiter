@@ -245,7 +245,7 @@ def lambda_handler(event, context):
     logger = Logging()
 
     # Event parser
-    event_parser = S3EventParser(event)
+    event_parser = S3EventParser(event, logger=logger.logger)
     cloudfront_bucket = event_parser.parse_event()
 
     # Log parser
